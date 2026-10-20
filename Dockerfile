@@ -25,8 +25,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el resto del código y los modelos
 COPY . .
 
-# Exponer el puerto que usa Hugging Face Spaces (7860)
-EXPOSE 7860
+# Puerto por defecto de Render
+EXPOSE 10000
 
 # Comando para ejecutar la aplicación
 CMD ["python", "main.py"]
